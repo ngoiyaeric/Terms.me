@@ -1,4 +1,17 @@
-# Terms.me
-Your terms companion chrome extension for any website you visit
-<img width="1021" alt="1B" src="https://github.com/ngoiyaeric/Terms.me/assets/115367894/852a75dc-0641-422b-88f5-99b07d471cbc">
-<img width="91" alt="Screen Shot 2023-11-15 at 2 51 58 PM" src="https://github.com/ngoiyaeric/Terms.me/assets/115367894/7fc663b5-be69-4acd-b3ba-9cf610522235">
+# Priva
+## Team:
+###   Alexander Worley, Grace Zhou, Rebecca Jia, and Yannie Tan
+###
+##   Project Description:
+## Welcome to Priva!
+### Priva is your new TL;DR for reading Privacy Policies!
+###
+### Adding this extension to your Chrome browser will allow you to instantly recieve a summary of that website's Privacy Policy.
+###
+### Upon downloading Priva, you will need to obtain an OpenAI GPT-3 API Key and paste it into the top variable or script.js
+### You can obtain one here: https://platform.openai.com/account/api-keys
+###
+### Once that is complete, simply load it into your Chrome browser, and you'll be good to go!
+### Enjoy!
+###
+#### *Please note that this extension uses an AI. As such, it is prone to errors and misrepresentation. The information provided by this extension is not a substitute for reading an entity's Privacy Policy yourself.*
