@@ -1,7 +1,4 @@
-// In order to use this extension,
-// you must obtain an OpenAI GPT-3 APIKey.
-// You can obtain one here: https://platform.openai.com/account/api-keys
-// Once you obtain your APIKey, past it between the '' below:
+
 const apiKey = '';
 
 // Store question for GPT-3 and GPT-3's response.
@@ -28,9 +25,9 @@ chrome.tabs.query({ active: true, currentWindow: true }, async function (tabs) {
   questionElement.innerText = `What data does ${domain} collect about its users, and how does it use it?`;
   responseElement.innerText = "Loading...";
 
-  const prompt = `Give me the gist of how ${domain} collects data about its users, and how the company uses it.`;
-  const temperature = 0.5;
-  const maxTokens = 150;
+  const prompt = `Summarize how this ${domain} collects data about its users, and how the company uses it.`;
+  const temperature = 0.2;
+  const maxTokens = 200;
 
   const body = {
     prompt,
@@ -40,7 +37,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, async function (tabs) {
 
   // Call API
   try {
-    const response = await fetch(`https://api.openai.com/v1/engines/davinci/completions?engine=davinci&prompt=${encodeURIComponent(prompt)}&temperature=${temperature}&max_tokens=${maxTokens}`, {
+    const response = await fetch(`https://api.openai.com/v1/models/gpt-4o&prompt=${encodeURIComponent(prompt)}&temperature=${temperature}&max_tokens=${maxTokens}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
